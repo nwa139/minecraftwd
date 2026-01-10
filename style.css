@@ -33,9 +33,16 @@ hr {
     border-radius: 20px;
 }
 
-.update :is(h1, h2, h3, h4, h5, h6, p) {
+.update h1,
+.update h2,
+.update h3,
+.update h4,
+.update h5,
+.update h6,
+.update p {
     color: white;
 }
+
 
 .inupdate {
     background-color: #ffffff;
@@ -45,9 +52,16 @@ hr {
     border-radius: 20px;
 }
 
-.inupdate :is(h1, h2, h3, h4, h5, h6, p) {
+.inupdate h1,
+.inupdate h2,
+.inupdate h3,
+.inupdate h4,
+.inupdate h5,
+.inupdate h6,
+.inupdate p {
     color: #001caeff;
 }
+
 
 .fira-sans-thin {
     font-family: "Fira Sans", sans-serif;
