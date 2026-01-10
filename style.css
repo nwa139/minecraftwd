@@ -4,6 +4,10 @@ html, body {
     background-color: #ffe300ff;
 }
 
+body::-webkit-scrollbar {
+    display: none; /* cache la scrollbar */
+}
+
 h1, h2, h3, h4, h5, h6 {
     color: #001caeff;
     font-family: "Fira Sans", sans-serif;
