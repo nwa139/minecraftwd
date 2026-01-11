@@ -60,6 +60,14 @@ hr {
     color: #001caeff;
 }
 
+.signal {
+    height: 100vh;
+    width: 100vw;
+    display: flex;       /* active Flexbox */
+    justify-content: center; /* centre horizontalement */
+    align-items: center;     /* centre verticalement */
+}
+
 
 .fira-sans-thin {
     font-family: "Fira Sans", sans-serif;
