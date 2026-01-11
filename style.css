@@ -63,11 +63,16 @@ hr {
 .signal {
     height: 100vh;
     width: 100vw;
-    display: flex;       /* active Flexbox */
-    justify-content: center; /* centre horizontalement */
-    align-items: center;     /* centre verticalement */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.signal h1 {
+    font-size: 250%;
+    margin: 0;
+    padding: 0;
+}
 
 .fira-sans-thin {
     font-family: "Fira Sans", sans-serif;
