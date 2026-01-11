@@ -49,5 +49,30 @@
         </div>
     </div>
 </div>
+<script>
+    let goingDown = true;
+
+    function autoScroll() {
+        if (goingDown) {
+            if (window.scrollY + window.innerHeight >= document.body.scrollHeight) {
+                goingDown = false;
+                setTimeout(autoScroll, 1500);
+                return;
+            }
+            window.scrollBy({ top: 1, behavior: 'smooth' });
+        } else {
+            if (window.scrollY <= 0) {
+                goingDown = true;
+                setTimeout(autoScroll, 2500);
+                return;
+            }
+            window.scrollBy({ top: -1, behavior: 'smooth' });
+        }
+        setTimeout(autoScroll, 16); // environ 60fps
+    }
+
+    autoScroll();
+</script>
+
 </body>
 </html>
